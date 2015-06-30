@@ -17,7 +17,7 @@ local time='%{$fg[green]%}[%*]%{$reset_color%}'
 PROMPT="╭─${user_host} ${current_dir} ${rvm_ruby} ${git_branch} 
 ╰─%B$%b "
 RPS1="${return_code}"
-RPROMPT='%{$fg[green]%}[%*]%{$reset_color%}'
+RPROMPT='${return_code} [%*]'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹"
 ZSH_THEME_GIT_PROMPT_SUFFIX="› %{$reset_color%}"
